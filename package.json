@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/gavinraney/devlab-november#readme",
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.1",
     "nodemon": "^2.0.19"
   }

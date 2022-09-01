@@ -2,15 +2,16 @@ const express = require('express')
 const app = express()
 const path = require('node:path')
 
-app.get('/', function (req, res) {
-  //res.send('Hello World from Node/Express/Heroku')
+app.set("view engine", "ejs")
 
-  res.sendFile(
-    path.join(
-      __dirname,
-      "index.html"
-    )
-  );
+let usernameExpress = 'Joe';
+
+app.get('/', function (req, res) {
+
+  //res.sendFile(path.join(__dirname,"index.html"));
+  //res.send('Hello ' + username + ' from Node/Express/Heroku');
+  //res.send(`Hello ${username} from Node/Express/Heroku with Backticks!`);
+  res.render('index', { usernameEJS: usernameExpress});
 
 })
 
