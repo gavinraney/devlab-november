@@ -1,4 +1,4 @@
-<h1> Hi there, <%=usernameEJS%> </h1> 
+<h1> Hi there, <%=userName%> </h1> 
 
 <h1>    
 Gavin's Page
@@ -19,3 +19,12 @@ Gavin's Page
     on g/h @barrycumbie
     repo = 
 </p>
+
+<!-- TODO: create issue, all update this page -->
+
+
+<form method="post" action="/saveToNode">
+    <label>do that data!</label>
+    <input type="text" name="userName">
+    <input type="submit" value="send to node via express">
+</form>
